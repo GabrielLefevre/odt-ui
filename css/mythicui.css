@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+/* Pause img */
+#pause img[src*="icons/svg/clockwork.svg"] {
+    box-sizing: border-box;
+    width: 128px;
+    height: 128px;
+    padding-left: 128px;
+
+    background-image: url("/modules/odt-ui/ui/img/paused-mythicui.webp");
+    animation: rotation 20s infinite linear;
+}
+
+/* #region Chat Tab*/
+.message {
+    background-image: url("/modules/odt-ui/ui/img/MarbleBlue.webp") !important;
+}
+
+.message-sender {
+    color: darkred;
+    font-weight: bold;
+    border-bottom-color: darkred;
+    text-decoration: underline;
+}
+
+#chat-message {
+    background-image: url(/modules/odt-ui/ui/img/MarbleBlue.webp) !important;
+    box-shadow: 0px 0px 6px 1px #818488 inset;
+    border-radius: 5px;
+}
+
+.polyglot-lang-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 0px;
+    background: url(/modules/odt-ui/ui/img/MarbleBlue.webp) repeat !important;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    color: #520000;
+    margin-top: -10px;
+}
+
+.roll-type-select {
+    color: #520000 !important;
+    background: url(/modules/odt-ui/ui/img/MarbleBlue.webp) repeat !important;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#chat-controls .control-buttons {
+    color: white;
+}
+
+#sidebar .sidebar-tab #chat-controls div.roll-type-select select {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(/modules/odt-ui/ui/img/MarbleBlue.webp) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/odt-ui/ui/img/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+}
+
+/* #region Sidebar Folder and widgets*/
+.sidebar-tab .directory-header .header-search input {
+    font-family: CaslonPro;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 24px;
+    top: 7px;
+    padding-top: 3px;
+    background: url(/modules/odt-ui/ui/img/MarbleBlue.webp) repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-position: initial;
+    box-shadow: inset 0 0 10px #000000;
+    border-image: url(/modules/odt-ui/ui/img/chat-controls-border.png) 4 repeat;
+    border-image-width: 4px;
+    border-image-outset: 3px 2px 2px 2px;
+    color: #520000;
+
+}
+
+.header-search {
+    padding-bottom: 8px;
+}
+
+.fa-search {
+    color: darkgoldenrod;
+}
+
+.fa-sort-amount-up {
+    color: darkgoldenrod;
+}
+
+/* #endregion */
+
+/*************************************************************/
+/*=============== SIDEBAR FOLDERs AS BUTTONS ================*/
+/*************************************************************/
+
+.sidebar-tab .directory-header button {
+    background-image: url(/modules/odt-ui/ui//buttons/button-green.webp);
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    min-height: 32px;
+    border: 0px solid #b5b3a4;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.sidebar-tab .directory-footer button {
+    background-image: url(/modules/odt-ui/ui//buttons/button-green.webp);
+    text-align: center;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    min-height: 32px;
+    border: 0px solid #b5b3a4;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.sidebar-tab .folder .folder-header {
+    background-image: url(/modules/odt-ui/ui/buttons/button-grey-light.webp) !important;
+    text-align: left !important;
+    background-position: center !important;
+    background-size: 100% 55px !important;
+    background-repeat: no-repeat !important;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: white;
+    padding-left: 25px;
+}
+
+.sidebar-tab .directory-list .directory.item h3 {
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+#sidebar section.sidebar-directory ol.directory-list li.directory-item.folder header {
+    align-items: baseline;
+    text-align: left !important;
+    padding-left: 25px;
+}
+
+.subdirectory .folder {
+    border-left: 2px solid #585858 !important;
+}
+
+
+/* #endregion */
+
+#settings button {
+    background-image: url(../ui/buttons/button-blue.webp);
+    background-repeat: no-repeat;
+    background-position: center !important;
+    background-size: 100%;
+    border: 1px solid black;
+    color: whitesmoke;
+    font-size: 14px;
+}
+
+/* #region Remove speaker name background colors in Chat window */
+#chat-log .message .message-header .message-sender {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* #endregion */
+
+/* #region Fix so as not to bigfoot on VTTA's tag system */
+#sidebar section > ol.directory-list > li header > span.vtta-folder-label {
+    text-shadow: 0px 0px 0px black !important;
+}
+
+/* #endregion */
+
+/* #region Chat log */
+/* differentiate public roll from private or blind.
+ Private uses class whisper, blind uses class blind AND whisper, Self Roll
+ uses class whisper (identical to Private Roll for CSS) */
+#chat-log .message.whisper {
+
+    font-style: italic;
+}
+
+#chat-log .message.whisper .message-header .message-metadata::before {
+    color: #585858;
+    content: " (Private Roll) ";
+    float: left;
+}
+
+
+#chat-log .message.blind .message-header .message-metadata::before {
+    color: #585858;
+    content: " (Blind Roll) " !important;
+    float: left;
+}
+
+.dialog .dialog-buttons button.default {
+    background-image: url(/modules/odt-ui/ui/img/dialogbutton.png);
+    background-size: cover;
+    border: 2px groove #f0f0e0;
+}
+
+
+.window-app .window-content {
+    background: url(/modules/odt-ui/ui/img/parchment3.png) repeat;
+    box-shadow: 0px 0px 3px 1px inset;
+}
+
+.dnd5e.sheet .window-content {
+    background: url(/modules/odt-ui/ui/img/parchment3.png) repeat;
+    padding: 3px;
+}
+
+.dnd5e.sheet.actor.npc {
+    min-width: 600px;
+    min-height: 715px;
+}
+
+.dnd5e.sheet.actor.character {
+    min-width: 720px;
+    min-height: 740px;
+}
+
+.dialog .dialog-buttons button {
+    background-image: url(/modules/odt-ui/ui/img/dialogbutton.png);
+    background-size: cover;
+    border: 2px groove #f0f0e0;
+    margin: 0 5px 0 0;
+}
+
+.window-app .window-header {
+    border-bottom: 0px solid #000;
+    background-image: url(/modules/odt-ui/ui/img/MarbleDark.webp);
+}
+
+.window-app .window-header a:hover {
+    text-shadow: 0px 0px 4px #dcd501 !important;
+}
+
+.window-app.minimized {
+    border: 0px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 2px;
+    background: #e2d260;
+    border: 1px solid #a29023;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background: #3a3c26;
+}
+
+.app.sidebar-popout {
+    border: 1px solid #e9ff00;
+}
+
+.dark-mode .window-app .window-content {
+    background: url(/modules/odt-ui/ui/img/BG2.webp) repeat;
+}
+
+.dark-mode .dnd5e.sheet .window-content {
+    background: url(/modules/odt-ui/ui/img/BG2.webp) repeat;
+}
+
+.dark-mode .dialog .dialog-buttons button {
+    background-image: url(/modules/odt-ui/ui/img/dialogbuttonDark.png);
+    background-size: cover;
+}
+
+.dark-mode .message {
+    background-image: url("/modules/odt-ui/ui/img/BG2.webp") !important;
+}
+
+.dark-mode #chat-message {
+    background-image: url(/modules/odt-ui/ui/img/BG2.webp) !important;
+}
+
+.dark-mode .polyglot-lang-select select {
+    background: url(/modules/odt-ui/ui/img/BG2.webp) repeat !important;
+}
+
+.dark-mode .dnd5e.sheet.actor ul.attributes li.attribute .attribute-footer {
+
+    font-size: 11px;
+}
