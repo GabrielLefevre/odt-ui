@@ -310,3 +310,7 @@
 
     font-size: 11px;
 }
+
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.fixed, .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.fixed {
+    color: #e55;
+}
